@@ -20,7 +20,7 @@ const MovieDetails = () => {
     return (
         <div className="movie">
             <div className="movie__intro">
-                <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.backdrop_path : ""}`} />
+                <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.backdrop_path : ""}`}  alt="noimg"/>
             </div>
             <div className="movie__detail">
                 <div className="movie__detailLeft">

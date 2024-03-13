@@ -11,11 +11,11 @@ const MovieList = () => {
 
     useEffect(() => {
         getData()
-    }, [])
+    },[])
 
     useEffect(() => {
         getData()
-    }, [type])
+    },[type])
 
     const getData = async() => {
         const { data } = await axios.get(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=c556d0d83ea266bb185d004e4d9f3ddd&language=en-US`);
